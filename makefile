@@ -9,7 +9,7 @@ ifeq ($(UNAME_S),Darwin)
 	SHAREDLIBPATH = /usr/local/lib
 endif
 
-OPENSSL_signer: $(SRCDIR)/OPENSSL_signer.c
+Signer: $(SRCDIR)/OPENSSL_signer.c
 	clang -shared $(SRCDIR)/OPENSSL_signer.c -lcrypto -o $(SHAREDLIB)
 	cp libOPENSSL_signer.so $(SHAREDLIBPATH)
 

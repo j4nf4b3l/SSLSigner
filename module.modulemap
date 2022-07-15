@@ -1,0 +1,5 @@
+module COPENSSL_signer {
+  header "CSources/OPENSSL_signer.h"
+  link "OPENSSL_signer"
+  export *
+}
